@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Test.Models.Movie> 
+
+@{
+    Layout = null;
+}
+
+@section scripts {
+    <script>
+        window.onload = function () {
+            console.log("window.onload");
+        }
+    </script>
+}
+
+<ul style="background-color:lightcyan">
+    @foreach (var item in Model)
+    {
+        <li>@item.Id @item.Name @item.Type</li>
+    }
+</ul>

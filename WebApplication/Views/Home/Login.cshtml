@@ -1,0 +1,38 @@
+@model WebApplication.Models.User
+
+<h1>This is the Login page.</h1>
+@section Scripts
+{
+    <script type="text/javascript">
+        window.onload = init;
+        
+        function init(){
+            new Vue({
+                el: "#root",
+                data:{
+                    Email: "@Model.Email",
+                    Password: "@Model.Password"   
+                }
+            });
+        }
+    </script>
+}
+
+@using (Html.BeginForm())
+{
+    <div id="root">
+        @Html.ValidationSummary()
+            
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, htmlAttributes: new { v_model = "Email" })
+        </div>
+            
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password)
+            @Html.PasswordFor(m => m.Password)
+        </div>
+            
+        <input type="submit" value="Submit" :disabled="!Email && !Password"/>    
+    </div>
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"]</title>
+    <script type="text/javascript" src="/vue/dist/vue.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</head>
+<body>
+<h1>Layout</h1>
+@RenderBody()
+
+<hr/>
+@Html.ActionLink("Back To Home", "Index", "Home")
+</body>
+</html>

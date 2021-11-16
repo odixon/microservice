@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "nIawb7B7pDCw4dJivQDHgrQvj+jGqyMyQLkOz7LjdrUU5SG/Idk+uM9drSGCyMiXCYxS2B8FKoTAb4PmsF8FLg==",
+  "success": true,
+  "projectFilePath": "/Users/apple/Desktop/Projects/WebApplication/ConsoleApp/ConsoleApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/apple/.nuget/packages/coelwu.music.sdk/1.0.7/coelwu.music.sdk.1.0.7.nupkg.sha512",
+    "/Users/apple/.nuget/packages/mcmaster.extensions.commandlineutils/3.1.0/mcmaster.extensions.commandlineutils.3.1.0.nupkg.sha512",
+    "/Users/apple/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/apple/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

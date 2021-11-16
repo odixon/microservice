@@ -1,0 +1,17 @@
+/Users/apple/Desktop/Projects/WebApplication/Consumer/bin/Debug/net5.0/Consumer.deps.json
+/Users/apple/Desktop/Projects/WebApplication/Consumer/bin/Debug/net5.0/Consumer.runtimeconfig.json
+/Users/apple/Desktop/Projects/WebApplication/Consumer/bin/Debug/net5.0/Consumer.runtimeconfig.dev.json
+/Users/apple/Desktop/Projects/WebApplication/Consumer/bin/Debug/net5.0/Consumer.dll
+/Users/apple/Desktop/Projects/WebApplication/Consumer/bin/Debug/net5.0/ref/Consumer.dll
+/Users/apple/Desktop/Projects/WebApplication/Consumer/bin/Debug/net5.0/Consumer.pdb
+/Users/apple/Desktop/Projects/WebApplication/Consumer/bin/Debug/net5.0/RabbitMQ.Client.dll
+/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/Debug/net5.0/Consumer.csproj.AssemblyReference.cache
+/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/Debug/net5.0/Consumer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/Debug/net5.0/Consumer.AssemblyInfoInputs.cache
+/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/Debug/net5.0/Consumer.AssemblyInfo.cs
+/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/Debug/net5.0/Consumer.csproj.CoreCompileInputs.cache
+/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/Debug/net5.0/Consumer.csproj.CopyComplete
+/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/Debug/net5.0/Consumer.dll
+/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/Debug/net5.0/ref/Consumer.dll
+/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/Debug/net5.0/Consumer.pdb
+/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/Debug/net5.0/Consumer.genruntimeconfig.cache

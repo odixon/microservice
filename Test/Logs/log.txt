@@ -1,0 +1,28 @@
+2021-05-30 14:41:40.8128 Info Message Template Auto Format enabled
+2021-05-30 14:41:40.8323 Info Loading assembly: NLog.Web.AspNetCore
+2021-05-30 14:41:40.8892 Info Adding target FileTarget(Name=allfile)
+2021-05-30 14:41:40.9025 Info Adding target FileTarget(Name=ownFile-web)
+2021-05-30 14:41:40.9034 Warn Skipping unrecognized property 'tolower=true` for ${level} (NLog.LayoutRenderers.LevelLayoutRenderer)
+2021-05-30 14:41:40.9065 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2021-05-30 14:41:41.0332 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=69, FilePath=/Users/apple/Desktop/Projects/WebApplication/Test/bin/Debug/net5.0/nlog.config
+2021-05-30 14:43:31.4252 Info Message Template Auto Format enabled
+2021-05-30 14:43:31.4440 Info Loading assembly: NLog.Web.AspNetCore
+2021-05-30 14:43:31.5012 Info Adding target FileTarget(Name=allfile)
+2021-05-30 14:43:31.5137 Info Adding target FileTarget(Name=ownFile-web)
+2021-05-30 14:43:31.5147 Warn Skipping unrecognized property 'tolower=true` for ${level} (NLog.LayoutRenderers.LevelLayoutRenderer)
+2021-05-30 14:43:31.5168 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2021-05-30 14:43:31.6304 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=69, FilePath=/Users/apple/Desktop/Projects/WebApplication/Test/bin/Debug/net5.0/nlog.config
+2021-05-30 15:05:26.2662 Info Message Template Auto Format enabled
+2021-05-30 15:05:26.2867 Info Loading assembly: NLog.Web.AspNetCore
+2021-05-30 15:05:26.3342 Info Adding target FileTarget(Name=allfile)
+2021-05-30 15:05:26.3466 Info Adding target FileTarget(Name=ownFile-web)
+2021-05-30 15:05:26.3466 Warn Skipping unrecognized property 'tolower=true` for ${level} (NLog.LayoutRenderers.LevelLayoutRenderer)
+2021-05-30 15:05:26.3491 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2021-05-30 15:05:26.4513 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=69, FilePath=/Users/apple/Desktop/Projects/WebApplication/Test/bin/Debug/net5.0/nlog.config
+2021-06-05 08:45:51.2336 Info Message Template Auto Format enabled
+2021-06-05 08:45:51.2532 Info Loading assembly: NLog.Web.AspNetCore
+2021-06-05 08:45:51.3031 Info Adding target FileTarget(Name=allfile)
+2021-06-05 08:45:51.3134 Info Adding target FileTarget(Name=ownFile-web)
+2021-06-05 08:45:51.3145 Warn Skipping unrecognized property 'tolower=true` for ${level} (NLog.LayoutRenderers.LevelLayoutRenderer)
+2021-06-05 08:45:51.3166 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2021-06-05 08:45:51.4246 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=69, FilePath=/Users/apple/Desktop/Projects/WebApplication/Test/bin/Debug/net5.0/nlog.config

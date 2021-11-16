@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dhc/OsIxmsp16MvizTrIXmA91zs228TClPa6I3hiaEZQ4a47MVrf7YI8Lu2F8Hqi2VKpXcp+rrNlWgtrIIxS0A==",
+  "dgSpecHash": "GPEmF2Q9SYmxE40l5dXxRV4selPxRYeksnAzc4GBs+n7uqdZtm+6GTTmkt797Zy/ApyAwFTrRZi5vG9xOceazg==",
   "success": true,
-  "projectFilePath": "/Users/apple/Desktop/Projects/WebApplication/WebApplication/WebApplication.csproj",
+  "projectFilePath": "/Users/apple/Desktop/Projects/microservice/WebApplication/WebApplication.csproj",
   "expectedPackageFiles": [
     "/Users/apple/.nuget/packages/bouncycastle.netcore/1.8.5/bouncycastle.netcore.1.8.5.nupkg.sha512",
     "/Users/apple/.nuget/packages/consul/1.6.10.3/consul.1.6.10.3.nupkg.sha512",

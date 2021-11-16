@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 namespace WebApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -32,7 +32,7 @@ namespace WebApi.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)] + _settings.CurrentIP
+                Summary = Summaries[rng.Next(Summaries.Length)] + $" From {_settings.CurrentIP}:{_settings.Port}"
             })
             .ToArray();
         }

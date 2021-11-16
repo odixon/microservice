@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/apple/Desktop/Projects/WebApplication/ConsoleApp/ConsoleApp.csproj": {}
+    "/Users/apple/Desktop/Projects/microservice/ConsoleApp/ConsoleApp.csproj": {}
   },
   "projects": {
-    "/Users/apple/Desktop/Projects/WebApplication/ConsoleApp/ConsoleApp.csproj": {
+    "/Users/apple/Desktop/Projects/microservice/ConsoleApp/ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/apple/Desktop/Projects/WebApplication/ConsoleApp/ConsoleApp.csproj",
+        "projectUniqueName": "/Users/apple/Desktop/Projects/microservice/ConsoleApp/ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "/Users/apple/Desktop/Projects/WebApplication/ConsoleApp/ConsoleApp.csproj",
+        "projectPath": "/Users/apple/Desktop/Projects/microservice/ConsoleApp/ConsoleApp.csproj",
         "packagesPath": "/Users/apple/.nuget/packages/",
-        "outputPath": "/Users/apple/Desktop/Projects/WebApplication/ConsoleApp/obj/",
+        "outputPath": "/Users/apple/Desktop/Projects/microservice/ConsoleApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/apple/.config/NuGet/NuGet.Config"

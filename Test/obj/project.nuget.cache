@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MZ3vNxtLzdyXVU37ia304GoS1v3XeFj4MV1ZoW7VpROTUDgB6jn1ZiPkSDwud9Y47RUTc00ot5RzUOXDDGH2qA==",
+  "dgSpecHash": "QmtYgEaK3NJ2Fj9xHrwgzURx+msx2k1wf98DW/vbq89vJIbdlWSNEXclVVqPZ513usqdtSURgyZmvQymjuYdvg==",
   "success": true,
-  "projectFilePath": "/Users/apple/Desktop/Projects/WebApplication/Test/Test.csproj",
+  "projectFilePath": "/Users/apple/Desktop/Projects/microservice/Test/Test.csproj",
   "expectedPackageFiles": [
     "/Users/apple/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/apple/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

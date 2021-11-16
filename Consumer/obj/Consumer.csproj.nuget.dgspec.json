@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/apple/Desktop/Projects/WebApplication/Consumer/Consumer.csproj": {}
+    "/Users/apple/Desktop/Projects/microservice/Consumer/Consumer.csproj": {}
   },
   "projects": {
-    "/Users/apple/Desktop/Projects/WebApplication/Consumer/Consumer.csproj": {
+    "/Users/apple/Desktop/Projects/microservice/Consumer/Consumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/apple/Desktop/Projects/WebApplication/Consumer/Consumer.csproj",
+        "projectUniqueName": "/Users/apple/Desktop/Projects/microservice/Consumer/Consumer.csproj",
         "projectName": "Consumer",
-        "projectPath": "/Users/apple/Desktop/Projects/WebApplication/Consumer/Consumer.csproj",
+        "projectPath": "/Users/apple/Desktop/Projects/microservice/Consumer/Consumer.csproj",
         "packagesPath": "/Users/apple/.nuget/packages/",
-        "outputPath": "/Users/apple/Desktop/Projects/WebApplication/Consumer/obj/",
+        "outputPath": "/Users/apple/Desktop/Projects/microservice/Consumer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/apple/.config/NuGet/NuGet.Config"

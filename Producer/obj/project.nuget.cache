@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UlUvtc9XAGHQPEJBNQB0xpV/aExcbIbWtbJQ6cAqzJHCWAiGZ7VxVt7W4yTxtD/lMFYfG9yzJcllo3bAIAIaYQ==",
+  "dgSpecHash": "EMlarVnw7zdXsNMPOK4K1UqUIvknMek1c+epPwoc0S8f/IUKwG9SQQk4zi2CDmXwtgPygIZK12U9/veY9/GPrw==",
   "success": true,
-  "projectFilePath": "/Users/apple/Desktop/Projects/WebApplication/Producer/Producer.csproj",
+  "projectFilePath": "/Users/apple/Desktop/Projects/microservice/Producer/Producer.csproj",
   "expectedPackageFiles": [
     "/Users/apple/.nuget/packages/rabbitmq.client/6.2.2/rabbitmq.client.6.2.2.nupkg.sha512",
     "/Users/apple/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aZ3HWyAu3a92ngoVuOkDfCRpguVRafNdsM/F/DGfwcxnIpX14N+cb3T5E7sVDaOE0F1NQwfN+wz/T/Y1lJxmmg==",
+  "dgSpecHash": "QPF5nFlYUreJAmDYqSpvvUB8DG08E1f+lIKoxQ/NF0R7G53l9w/PbyAyJkmXTMCBSDo+GzbRRK7uYNUxaGBhZw==",
   "success": true,
-  "projectFilePath": "/Users/apple/Desktop/Projects/WebApplication/Gateway/Gateway.csproj",
+  "projectFilePath": "/Users/apple/Desktop/Projects/microservice/Gateway/Gateway.csproj",
   "expectedPackageFiles": [
     "/Users/apple/.nuget/packages/consul/1.6.1.1/consul.1.6.1.1.nupkg.sha512",
     "/Users/apple/.nuget/packages/fluentvalidation/9.3.0/fluentvalidation.9.3.0.nupkg.sha512",

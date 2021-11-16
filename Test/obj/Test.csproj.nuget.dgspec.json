@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/apple/Desktop/Projects/WebApplication/Test/Test.csproj": {}
+    "/Users/apple/Desktop/Projects/microservice/Test/Test.csproj": {}
   },
   "projects": {
-    "/Users/apple/Desktop/Projects/WebApplication/Test/Test.csproj": {
+    "/Users/apple/Desktop/Projects/microservice/Test/Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/apple/Desktop/Projects/WebApplication/Test/Test.csproj",
+        "projectUniqueName": "/Users/apple/Desktop/Projects/microservice/Test/Test.csproj",
         "projectName": "Test",
-        "projectPath": "/Users/apple/Desktop/Projects/WebApplication/Test/Test.csproj",
+        "projectPath": "/Users/apple/Desktop/Projects/microservice/Test/Test.csproj",
         "packagesPath": "/Users/apple/.nuget/packages/",
-        "outputPath": "/Users/apple/Desktop/Projects/WebApplication/Test/obj/",
+        "outputPath": "/Users/apple/Desktop/Projects/microservice/Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/apple/.config/NuGet/NuGet.Config"

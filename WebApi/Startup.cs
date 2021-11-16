@@ -38,6 +38,7 @@ namespace WebApi
         private string GetLocalIPAddress()
         {
             var addr = NetworkInterface.GetAllNetworkInterfaces()
+                //.Where(t => t.OperationalStatus == OperationalStatus.Up)
                 .Select(t => t.GetIPProperties())
                 .SelectMany(t => t.UnicastAddresses)
                 .FirstOrDefault(t => t.Address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork
@@ -45,9 +46,18 @@ namespace WebApi
             return addr;
         }
 
+        private int GetLocalPort(IApplicationBuilder app)
+        {
+            var serverAddress = app.ServerFeatures.Get<IServerAddressesFeature>().Addresses.FirstOrDefault();
+            var port = serverAddress.Substring(serverAddress.LastIndexOf(':') + 1);
+            return int.Parse(port);
+        }
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger<Startup> logger, IHostApplicationLifetime lifetime, Settings settings)
         {
+            settings.Port = GetLocalPort(app);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -74,21 +84,18 @@ namespace WebApi
                 c.Address = new Uri(settings.ConsulAddr);
                 c.Datacenter = "dc1";
             });
-            var serverAddress = app.ServerFeatures.Get<IServerAddressesFeature>().Addresses.FirstOrDefault();
-            logger.LogInformation($"server address: {serverAddress}");
-
-            var port = serverAddress.Substring(serverAddress.LastIndexOf(':') + 1);
+            
             var serviceRegistration = new AgentServiceRegistration
             {
                 ID = Guid.NewGuid().ToString().Replace("-", string.Empty),
                 Name = "WeatherForecast",
                 Address = settings.CurrentIP,
-                Port = int.Parse(port),
+                Port = settings.Port,
                 Check = new AgentServiceCheck
                 {
                     DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(5),
                     Interval = TimeSpan.FromSeconds(10),
-                    HTTP = $"http://{settings.CurrentIP}:{port}/api/healthcheck",
+                    HTTP = $"http://{settings.CurrentIP}:{settings.Port}/api/healthcheck",
                     Timeout = TimeSpan.FromSeconds(5)
                 }
             };
@@ -98,7 +105,6 @@ namespace WebApi
 
             lifetime.ApplicationStopping.Register(() =>
             {
-                logger.LogInformation($"The application is stopping...");
                 consulClient.Agent.ServiceDeregister(serviceRegistration.ID);
                 logger.LogInformation($"The service {serviceRegistration.ID} deregisted...");
             });

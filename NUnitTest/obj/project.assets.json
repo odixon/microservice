@@ -7515,11 +7515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/Desktop/Projects/WebApplication/NUnitTest/NUnitTest.csproj",
+      "projectUniqueName": "/Users/apple/Desktop/Projects/microservice/NUnitTest/NUnitTest.csproj",
       "projectName": "NUnitTest",
-      "projectPath": "/Users/apple/Desktop/Projects/WebApplication/NUnitTest/NUnitTest.csproj",
+      "projectPath": "/Users/apple/Desktop/Projects/microservice/NUnitTest/NUnitTest.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
-      "outputPath": "/Users/apple/Desktop/Projects/WebApplication/NUnitTest/obj/",
+      "outputPath": "/Users/apple/Desktop/Projects/microservice/NUnitTest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/apple/.config/NuGet/NuGet.Config"

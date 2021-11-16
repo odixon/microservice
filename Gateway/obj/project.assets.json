@@ -457,11 +457,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/Desktop/Projects/WebApplication/Gateway/Gateway.csproj",
+      "projectUniqueName": "/Users/apple/Desktop/Projects/microservice/Gateway/Gateway.csproj",
       "projectName": "Gateway",
-      "projectPath": "/Users/apple/Desktop/Projects/WebApplication/Gateway/Gateway.csproj",
+      "projectPath": "/Users/apple/Desktop/Projects/microservice/Gateway/Gateway.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
-      "outputPath": "/Users/apple/Desktop/Projects/WebApplication/Gateway/obj/",
+      "outputPath": "/Users/apple/Desktop/Projects/microservice/Gateway/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/apple/.config/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8kJUVZQSy/o3Oo74C97hOxNqQbcNRv+Opa5QkXsSew8qq+yGSX2+DUVd8mA851nfXX4XQBOphhc7vy8T/2CXBw==",
+  "dgSpecHash": "j0uMQ1YrSrGMMu3Z3F6Jpamtuv69LrqhVBtSOtkpEIRn5BL+k591WiWSzaBqZQh/icc+7nzmFSZ8/NFicQzPDA==",
   "success": true,
-  "projectFilePath": "/Users/apple/Desktop/Projects/WebApplication/WebApi/WebApi.csproj",
+  "projectFilePath": "/Users/apple/Desktop/Projects/microservice/WebApi/WebApi.csproj",
   "expectedPackageFiles": [
     "/Users/apple/.nuget/packages/consul/1.6.10.3/consul.1.6.10.3.nupkg.sha512",
     "/Users/apple/.nuget/packages/microsoft.csharp/4.3.0/microsoft.csharp.4.3.0.nupkg.sha512",

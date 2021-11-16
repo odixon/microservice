@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/apple/Desktop/Projects/WebApplication/WebApi/WebApi.csproj": {}
+    "/Users/apple/Desktop/Projects/microservice/WebApi/WebApi.csproj": {}
   },
   "projects": {
-    "/Users/apple/Desktop/Projects/WebApplication/WebApi/WebApi.csproj": {
+    "/Users/apple/Desktop/Projects/microservice/WebApi/WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/apple/Desktop/Projects/WebApplication/WebApi/WebApi.csproj",
+        "projectUniqueName": "/Users/apple/Desktop/Projects/microservice/WebApi/WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "/Users/apple/Desktop/Projects/WebApplication/WebApi/WebApi.csproj",
+        "projectPath": "/Users/apple/Desktop/Projects/microservice/WebApi/WebApi.csproj",
         "packagesPath": "/Users/apple/.nuget/packages/",
-        "outputPath": "/Users/apple/Desktop/Projects/WebApplication/WebApi/obj/",
+        "outputPath": "/Users/apple/Desktop/Projects/microservice/WebApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/apple/.config/NuGet/NuGet.Config"

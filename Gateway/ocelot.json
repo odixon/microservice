@@ -1,13 +1,20 @@
 ﻿{
-  "ReRoutes": [
+  "Routes": [
     {
-      "DownstreamPathTemplate": "/weatherforecast",
+      "DownstreamPathTemplate": "/api/{url}",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/{url}",
       "UpstreamHttpMethod": [ "Get", "Post" ],
       "ServiceName": "WeatherForecast",
       "LoadBalancerOptions": {
         "Type": "RoundRobin"
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "4s",
+        "PeriodTimespan": 5,
+        "Limit": 1
       }
     }
   ],

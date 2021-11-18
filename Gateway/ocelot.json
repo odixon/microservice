@@ -12,9 +12,9 @@
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "4s",
-        "PeriodTimespan": 5,
-        "Limit": 1
+        "Period": "1s",
+        "PeriodTimespan": 1,
+        "Limit": 50
       }
     }
   ],
@@ -22,8 +22,8 @@
   "GlobalConfiguration": {
     "ServiceDiscoveryProvider": {
       "Scheme": "http",
-      "Host": "192.168.0.111",
-      "Port": 8500,
+      "Host": "CONSUL_HOST",
+      "Port": "CONSUL_PORT",
       "Type": "Consul",
       "ConfigurationKey": "Oceolot"
     }

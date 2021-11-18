@@ -5,10 +5,20 @@ WORKDIR /app
 EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+
+ARG CONSUL_HOST
+ARG CONSUL_PORT
+
 WORKDIR /src
-COPY ["WebApi.csproj", "."]
-RUN dotnet restore "WebApi.csproj"
-COPY . .
+COPY ["WebApi/WebApi.csproj", "WebApi/"]
+RUN dotnet restore "WebApi/WebApi.csproj"
+WORKDIR /src/WebApi
+COPY WebApi/ .
+
+RUN sed -i "s/CONSUL_HOST/${CONSUL_HOST}/g" appsettings.json \
+   && sed -i "s/CONSUL_PORT/${CONSUL_PORT}/g" appsettings.json
+
+RUN cat appsettings.json
 RUN dotnet build "WebApi.csproj" -c Release -o /app/build
 
 FROM build AS publish

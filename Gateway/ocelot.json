@@ -3,7 +3,11 @@
     {
       "DownstreamPathTemplate": "/api/{url}",
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/{url}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Ids4Key",
+        "AllowedScopes": []
+      },
+      "UpstreamPathTemplate": "/weatherservice/{url}",
       "UpstreamHttpMethod": [ "Get", "Post" ],
       "ServiceName": "WeatherForecast",
       "LoadBalancerOptions": {

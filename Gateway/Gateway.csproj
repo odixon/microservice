@@ -7,8 +7,10 @@
 
   <ItemGroup>
     <None Remove="Ocelot.Provider.Consul" />
+    <None Remove="IdentityServer4.AccessTokenValidation" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Ocelot.Provider.Consul" Version="17.0.0" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
   </ItemGroup>
 </Project>

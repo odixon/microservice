@@ -8,6 +8,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 
 ARG CONSUL_HOST
 ARG CONSUL_PORT
+ARG ACCESS_TOKEN_URL
 
 WORKDIR /src
 COPY ["Gateway/Gateway.csproj", "Gateway/"]
@@ -16,7 +17,9 @@ WORKDIR /src/Gateway
 COPY Gateway/ .
 
 RUN sed -i "s/CONSUL_HOST/${CONSUL_HOST}/g" ocelot.json \
-  && sed -i "s/CONSUL_PORT/${CONSUL_PORT}/g" ocelot.json
+  && sed -i "s/CONSUL_PORT/${CONSUL_PORT}/g" ocelot.json \
+  && sed -i "s/ACCESS_TOKEN_URL/${ACCESS_TOKEN_URL}/g" appsettings.json
+
 RUN dotnet build "Gateway.csproj" -c Release -o /app/build
 
 FROM build AS publish

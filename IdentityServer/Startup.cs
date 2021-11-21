@@ -17,7 +17,10 @@ namespace IdentityServer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddIdentityServer()
+            services.AddIdentityServer(option =>
+                {
+                    option.IssuerUri = "MyCompany"; //必须设置IssuerUri，否则在ocelot中会报错
+                })
                 .AddDeveloperSigningCredential()
                 .AddInMemoryClients(Config.Clients)
                 .AddInMemoryApiScopes(Config.ApiScopes)

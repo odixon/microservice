@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace IdentityServer4Test
 {
@@ -32,7 +33,7 @@ namespace IdentityServer4Test
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "IdentityServer4Test", Version = "v1" });
             });
 
-            services.AddAuthentication("Bearer")
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddIdentityServerAuthentication(config =>
                 {
                     config.Authority = "http://localhost:4315";

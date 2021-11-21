@@ -3,10 +3,6 @@
     {
       "DownstreamPathTemplate": "/api/{url}",
       "DownstreamScheme": "http",
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Ids4Key",
-        "AllowedScopes": []
-      },
       "UpstreamPathTemplate": "/weatherservice/{url}",
       "UpstreamHttpMethod": [ "Get", "Post" ],
       "ServiceName": "WeatherForecast",
@@ -16,9 +12,13 @@
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s",
-        "PeriodTimespan": 1,
-        "Limit": 50
+        "Period": "5s",
+        "PeriodTimespan": 2,
+        "Limit": 3
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Ids4Key",
+        "AllowedScopes": []
       }
     }
   ],

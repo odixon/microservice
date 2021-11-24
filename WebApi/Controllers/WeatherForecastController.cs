@@ -24,7 +24,7 @@ namespace WebApi.Controllers
             _settings = settings;
         }
 
-        [HttpGet]
+        [HttpGet(template: "list")]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
@@ -35,6 +35,12 @@ namespace WebApi.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)] + $" From {_settings.CurrentIP}:{_settings.Port}"
             })
             .ToArray();
+        }
+
+        [HttpGet(template:"list/{id:int}")]
+        public string Get(int id)
+        {
+            return Summaries[id % Summaries.Length];
         }
     }
 }

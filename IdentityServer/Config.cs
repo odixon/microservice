@@ -9,7 +9,6 @@ namespace IdentityServer
         {
             new Client
             {
-                AccessTokenLifetime = 20,
                 ClientId="weather_client",
                 ClientName="Aiden Wang",
                 AllowedGrantTypes = GrantTypes.ClientCredentials,

@@ -24,7 +24,7 @@ namespace IdentityServer4Test.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet(template: "list")]
         [Authorize]
         public IEnumerable<WeatherForecast> Get()
         {
@@ -36,6 +36,19 @@ namespace IdentityServer4Test.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet]
+        [Route("list/{id:int:min(1)}")]
+        public WeatherForecast Get(int id)
+        {
+            var rng = new Random();
+            return new WeatherForecast
+            {
+                Date = DateTime.Now,
+                TemperatureC = rng.Next(10, 30),
+                Summary = Summaries[id % Summaries.Length]
+            };
         }
     }
 }

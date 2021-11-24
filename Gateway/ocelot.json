@@ -13,8 +13,8 @@
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
         "Period": "5s",
-        "PeriodTimespan": 2,
-        "Limit": 3
+        "PeriodTimespan": 1,
+        "Limit": 10
       },
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Ids4Key",
@@ -30,6 +30,7 @@
       "Port": "CONSUL_PORT",
       "Type": "Consul",
       "ConfigurationKey": "Oceolot"
-    }
+    },
+    "RequestIdKey": "OcRequestId"
   }
 }

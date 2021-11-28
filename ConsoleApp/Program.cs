@@ -11,9 +11,10 @@ namespace ConsoleApp
 
     class Program
     {
-
-        public static int Main(string[] args)
-        => CommandLineApplication.Execute<Program>(args);
+        public static void Main(string[] args)
+        {
+            CommandLineApplication.Execute<Program>(args);
+        }
 
         [Option(ShortName = "id", LongName = "playlist", Description = "The playlist id")]
         public long PlaylistId { get; }

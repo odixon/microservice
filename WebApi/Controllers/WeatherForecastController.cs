@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using WebApi.Models;
 
 namespace WebApi.Controllers
 {
@@ -10,37 +10,23 @@ namespace WebApi.Controllers
     [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        private readonly IMediator _mediator;
 
-        private readonly ILogger<WeatherForecastController> _logger;
-        private readonly Settings _settings;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, Settings settings)
+        public WeatherForecastController(IMediator mediator)
         {
-            _logger = logger;
-            _settings = settings;
+            _mediator = mediator;
         }
 
-        [HttpGet(template: "list")]
-        public IEnumerable<WeatherForecast> Get()
+        [HttpGet]
+        public Task<IEnumerable<WeatherQueryResponseModel>> Get([FromQuery]WeatherQueryRequestModel model)
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)] + $" From {_settings.CurrentIP}:{_settings.Port}"
-            })
-            .ToArray();
+            return _mediator.Send(model);
         }
 
-        [HttpGet(template:"list/{id:int}")]
-        public string Get(int id)
+        [HttpPost]
+        public Task<WeatherCreateResponseModel> Post(WeatherCreateRequestModel model)
         {
-            return Summaries[id % Summaries.Length];
+            return _mediator.Send(model);
         }
     }
 }

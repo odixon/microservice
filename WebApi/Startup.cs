@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using MediatR;
+using WebApi.Services;
 
 namespace WebApi
 {
@@ -33,6 +35,10 @@ namespace WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi", Version = "v1" });
             });
+
+            services.AddAutoMapper(typeof(Startup).Assembly);
+            services.AddSingleton<IWeatherService, WeatherService>();
+            services.AddMediatR(typeof(Startup));
         }
 
         private string GetLocalIPAddress()

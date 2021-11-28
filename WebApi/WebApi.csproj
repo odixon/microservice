@@ -8,9 +8,27 @@
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     <PackageReference Include="Consul" Version="1.6.10.3" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Consul" />
+    <None Remove="MediatR" />
+    <None Remove="Models\" />
+    <None Remove="Handlers\" />
+    <None Remove="Handlers\CommandHandlers\" />
+    <None Remove="Handlers\QueryHandlers\" />
+    <None Remove="Services\" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Profile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Handlers\CommandHandlers\" />
+    <Folder Include="Handlers\QueryHandlers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Profiles\" />
   </ItemGroup>
 </Project>

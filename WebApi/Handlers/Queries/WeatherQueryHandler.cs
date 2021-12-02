@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using WebApi.Models;
 using WebApi.Services;
 
-namespace WebApi.Handlers.QueryHandlers
+namespace WebApi.Handlers.Queries
 {
     public class WeatherQueryHandler : IRequestHandler<WeatherQueryRequestModel, IEnumerable<WeatherQueryResponseModel>>
     {

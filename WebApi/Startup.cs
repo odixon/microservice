@@ -38,6 +38,7 @@ namespace WebApi
 
             services.AddAutoMapper(typeof(Startup).Assembly);
             services.AddSingleton<IWeatherService, WeatherService>();
+            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(Handlers.Behaviors.LogginBehaviorHandler<,>));
             services.AddMediatR(typeof(Startup));
         }
 

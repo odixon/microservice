@@ -4,7 +4,7 @@ using MediatR;
 using WebApi.Models;
 using WebApi.Services;
 
-namespace WebApi.Handlers.CommandHandlers
+namespace WebApi.Handlers.Commands
 {
     public class WeatherCreateHandler : IRequestHandler<WeatherCreateRequestModel, WeatherCreateResponseModel>
     {

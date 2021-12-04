@@ -3,9 +3,9 @@
     {
       "DownstreamPathTemplate": "/api/{url}",
       "DownstreamScheme": "http",
-      "UpstreamPathTemplate": "/weatherservice/{url}",
+      "UpstreamPathTemplate": "/user/{url}",
       "UpstreamHttpMethod": [ "Get", "Post" ],
-      "ServiceName": "WeatherForecast",
+      "ServiceName": "UserService",
       "LoadBalancerOptions": {
         "Type": "RoundRobin"
       },

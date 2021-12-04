@@ -11,6 +11,8 @@
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
     <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="MySql.Data" Version="8.0.27" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +25,10 @@
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
     <None Remove="Profile\" />
     <None Remove="Handlers\Behaviors\" />
+    <None Remove="Entities\" />
+    <None Remove="Dapper" />
+    <None Remove="MySql.Data" />
+    <None Remove="Filters\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -32,5 +38,7 @@
     <Folder Include="Services\" />
     <Folder Include="Profiles\" />
     <Folder Include="Handlers\Behaviors\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Filters\" />
   </ItemGroup>
 </Project>

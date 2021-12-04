@@ -30,14 +30,18 @@ namespace WebApi
         {
 
             services.AddControllers();
-            services.AddSingleton(new Settings { CurrentIP = GetLocalIPAddress(), ConsulAddr = Configuration["ConsulAddr"] });
+            services.AddSingleton(new Settings {
+                CurrentIP = GetLocalIPAddress(),
+                ConsulAddr = Configuration["ConsulAddr"],
+                DbConnectionString = Configuration.GetConnectionString(nameof(Settings.DbConnectionString))
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi", Version = "v1" });
             });
 
             services.AddAutoMapper(typeof(Startup).Assembly);
-            services.AddSingleton<IWeatherService, WeatherService>();
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped(typeof(IPipelineBehavior<,>), typeof(Handlers.Behaviors.LogginBehaviorHandler<,>));
             services.AddMediatR(typeof(Startup));
         }
@@ -95,7 +99,7 @@ namespace WebApi
             var serviceRegistration = new AgentServiceRegistration
             {
                 ID = Guid.NewGuid().ToString().Replace("-", string.Empty),
-                Name = "WeatherForecast",
+                Name = "UserService",
                 Address = settings.CurrentIP,
                 Port = settings.Port,
                 Check = new AgentServiceCheck

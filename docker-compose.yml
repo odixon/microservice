@@ -21,6 +21,7 @@ services:
       args:
         - CONSUL_HOST
         - CONSUL_PORT
+        - DB_CONNECTION_STRING
     depends_on:
       - consul
     deploy:

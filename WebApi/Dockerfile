@@ -8,6 +8,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 
 ARG CONSUL_HOST
 ARG CONSUL_PORT
+ARG DB_CONNECTION_STRING
 
 WORKDIR /src
 COPY ["WebApi/WebApi.csproj", "WebApi/"]
@@ -16,7 +17,8 @@ WORKDIR /src/WebApi
 COPY WebApi/ .
 
 RUN sed -i "s/CONSUL_HOST/${CONSUL_HOST}/g" appsettings.json \
-   && sed -i "s/CONSUL_PORT/${CONSUL_PORT}/g" appsettings.json
+   && sed -i "s/CONSUL_PORT/${CONSUL_PORT}/g" appsettings.json \
+   && sed -i "s/DB_CONNECTION_STRING/${DB_CONNECTION_STRING}/g" appsettings.json
 
 RUN cat appsettings.json
 RUN dotnet build "WebApi.csproj" -c Release -o /app/build

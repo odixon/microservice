@@ -9,14 +9,12 @@ namespace IdentityServer
         {
             new Client
             {
-                ClientId="weather_client",
+                ClientId="user_client",
                 ClientName="Aiden Wang",
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
-                ClientSecrets = { new Secret("weather_client".Sha256()) },
+                ClientSecrets = { new Secret("user_secret".Sha256()) },
                 AllowedScopes = {
-                    //IdentityModel.OidcConstants.StandardScopes.OpenId,
-                    //IdentityModel.OidcConstants.StandardScopes.Profile,
-                    "WeatherScope"
+                    "UserApi"
                 },
                 Claims =
                 {
@@ -27,16 +25,11 @@ namespace IdentityServer
         };
         public static IEnumerable<ApiScope> ApiScopes =>new[]
         {
-        //    new ApiScope(IdentityModel.OidcConstants.StandardScopes.OpenId),
-        //    new ApiScope(IdentityModel.OidcConstants.StandardScopes.Profile),
-            new ApiScope("WeatherScope")
+            new ApiScope("UserApi")
         };
         public static IEnumerable<ApiResource> ApiResources => new []
         {
-            new ApiResource("WeatherApi", "天气情况 API")
-            {
-                Scopes = { "WeatherScope" }
-            }
+            new ApiResource("UserApi", "User API")
         };
     }
 }

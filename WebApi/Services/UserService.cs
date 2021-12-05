@@ -43,6 +43,12 @@ namespace WebApi.Services
             return Execute(conn => conn.QueryAsync<User>("SELECT Id, Name, Gender, Birthday FROM Users ORDER BY Id"));
         }
 
+        public async Task<bool> Delete(int id)
+        {
+            var result = await Execute(conn => conn.ExecuteAsync("DELETE FROM Users WHERE Id = @Id", new { Id = id }));
+            return result > 0;
+        }
+
         private T Execute<T>(Func<DbConnection, T> func)
         {
             using(var conn = new MySqlConnection(_settings.DbConnectionString))

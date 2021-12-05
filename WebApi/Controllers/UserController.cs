@@ -46,5 +46,12 @@ namespace WebApi.Controllers
 
             return Ok(response.UserInfo);
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await _mediator.Send(new DeleteUserRequestModel { Id = id });
+            return Ok(result);
+        }
     }
 }

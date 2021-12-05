@@ -11,5 +11,7 @@ namespace WebApi.Services
         Task<User> Create(User user);
 
         Task<User> FindUserById(int id);
+
+        Task<bool> Delete(int id);
     }
 }

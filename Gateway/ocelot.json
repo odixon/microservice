@@ -4,7 +4,7 @@
       "DownstreamPathTemplate": "/api/{url}",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/user/{url}",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "UpstreamHttpMethod": [ "Get", "Post", "Delete", "Put" ],
       "ServiceName": "UserService",
       "LoadBalancerOptions": {
         "Type": "RoundRobin"

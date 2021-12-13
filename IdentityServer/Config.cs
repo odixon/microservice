@@ -18,7 +18,7 @@ namespace IdentityServer
                 },
                 Claims =
                 {
-                    new ClientClaim(IdentityModel.JwtClaimTypes.Email, "aiden.wang1@cn.ey.com"),
+                    new ClientClaim(IdentityModel.JwtClaimTypes.Email, "hiwangjunhui@hotmail.com"),
                     new ClientClaim(IdentityModel.JwtClaimTypes.PhoneNumber, "18191856144")
                 }
             }

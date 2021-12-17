@@ -14,7 +14,7 @@ namespace IdentityServer
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
                 ClientSecrets = { new Secret("user_secret".Sha256()) },
                 AllowedScopes = {
-                    "UserApi"
+                    "user"
                 },
                 Claims =
                 {
@@ -23,13 +23,16 @@ namespace IdentityServer
                 }
             }
         };
-        public static IEnumerable<ApiScope> ApiScopes =>new[]
+        public static IEnumerable<ApiScope> ApiScopes => new[]
         {
-            new ApiScope("UserApi")
+            new ApiScope("user")
         };
-        public static IEnumerable<ApiResource> ApiResources => new []
+        public static IEnumerable<ApiResource> ApiResources => new[]
         {
-            new ApiResource("UserApi", "User API")
+            new ApiResource("aiden") //audience,name其实是audience
+            {
+                Scopes = new[]{ "user"} //如果这里不写scope，生成的access_token中不包含audience
+            }
         };
     }
 }

@@ -6,11 +6,15 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 
+ARG PORT=80
+
 WORKDIR /src
 COPY ["IdentityServer/IdentityServer.csproj", "IdentityServer/"]
 RUN dotnet restore "IdentityServer/IdentityServer.csproj"
 WORKDIR /src/IdentityServer
 COPY IdentityServer/ .
+
+RUN sed -i "s/PORT/${PORT}/g" appsettings.json
 
 RUN dotnet build "IdentityServer.csproj" -c Release -o /app/build
 

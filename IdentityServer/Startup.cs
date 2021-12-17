@@ -19,7 +19,7 @@ namespace IdentityServer
         {
             services.AddIdentityServer(option =>
                 {
-                    option.IssuerUri = "MyCompany"; //必须设置IssuerUri，否则在ocelot中会报错
+                    option.IssuerUri = $"http://localhost:{Configuration["Port"]}"; //必须设置IssuerUri，否则在ocelot中会报错
                 })
                 .AddDeveloperSigningCredential()
                 .AddInMemoryClients(Config.Clients)
